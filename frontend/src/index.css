@@ -1,3 +1,6 @@
+@import "tailwindcss";
+
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -12,6 +15,13 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
 
 a {
   font-weight: 500;
@@ -65,15 +75,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
-
-
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
-.input-field {
-  @apply w-full p-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500;
 }
